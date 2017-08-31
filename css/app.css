@@ -92,10 +92,6 @@ header p{
   border-left: solid 4px white;
 }
 
-section{
-  padding-top: 70px;
-}
-
 .top-bar, .top-bar-left > ul{
   background: orange;
 }
@@ -116,6 +112,27 @@ section{
   font-family: kabelbkbt;
 }
 
+.cuerpo{
+  padding-top: 70px;
+}
+
+.padding-aside{
+  padding: 10px;
+}
+
+aside{
+  background-color: white;
+}
+
+body{
+  background-color: grey;
+}
+
+.alineado-justificado-padre{
+  display:flex;
+  justify-content: space-around;
+}
+
 @media (min-width: 1024px) {
    {
 
@@ -123,13 +140,14 @@ section{
 }
 
 @media (min-width: 640px) and (max-width: 1023px) {
-   {
-
+  .cuerpo {
+    padding-top: 50px;
   }
 }
 
 @media (max-width: 639px) {
-   {
+  .cuerpo {
+    padding-top: 50px;
   }
 }
 
