@@ -1,0 +1,140 @@
+.size-12 { font-size: 12px; }
+.size-14 { font-size: 14px; }
+.size-16 { font-size: 16px; }
+.size-18 { font-size: 18px; }
+.size-21 { font-size: 21px; }
+.size-24 { font-size: 24px; }
+.size-36 { font-size: 36px; }
+.size-48 { font-size: 48px; }
+.size-60 { font-size: 60px; }
+.size-72 { font-size: 72px; }
+
+.step {
+  display: inline-block;
+  line-height: 1;
+  width: 10%;
+}
+
+@font-face {
+  font-family: K1996J;
+  src: url(../fonts/K1996J.TTF);
+}
+@font-face {
+  font-family: kabelbkbt;
+  src: url(../fonts/kabelbkbt.TTF);
+}
+
+header{
+  position: fixed;
+  width: 100%;
+}
+
+.encabezado-color{
+  background: orange;
+  height: 70px;
+}
+
+.divs-centrados-horizontales-padre{
+  overflow:hidden;
+  text-align: center;
+  margin:0 auto;
+}
+
+.divs-centrados-horizontales-hijo{
+  display:inline-table;
+}
+
+.centrado-vertical-padre {
+  display: flex;
+}
+.centrado-vertical-hijo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header h4, header p{
+  margin: 0;
+}
+
+header a div{
+  margin-left: 10px;
+}
+
+header h4{
+
+  font-family: K1996J;
+  /* WebKit (Safari/Chrome) Only */
+  -webkit-text-stroke: 1px black;
+
+  /* If we weren't using text-shadow, we'd set a fallback color
+     and use this to set color instead
+    -webkit-text-fill-color: white; */
+
+  color: orange;
+
+  text-shadow:
+    3px 3px 0 #000,
+    /* Simulated effect for Firefox and Opera
+       and nice enhancement for WebKit */
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;
+}
+
+header p{
+  font-family: kabelbkbt;
+  color: white;
+}
+
+.encabezado-borde-izquierdo{
+  border-left: solid 4px white;
+}
+
+section{
+  padding-top: 70px;
+}
+
+.top-bar, .top-bar-left > ul{
+  background: orange;
+}
+
+.navbar-menu a:hover {
+	background-color: orange;
+}
+
+.menu-flechita-color{
+  color: white;
+}
+
+.navbar-menu a{
+	background-color: black;
+  margin: 0 auto;
+  width: 100%;
+  color: white;
+  font-family: kabelbkbt;
+}
+
+@media (min-width: 1024px) {
+   {
+
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+   {
+
+  }
+}
+
+@media (max-width: 639px) {
+   {
+  }
+}
+
+@media screen and (max-device-width: 1023px) and (orientation: landscape){
+  .top-bar-right {
+    display: none!important;
+   }
+}
