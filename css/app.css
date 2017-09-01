@@ -11,17 +11,21 @@
 
 .step {
   display: inline-block;
-  line-height: 1;
-  width: 10%;
 }
 
 @font-face {
   font-family: K1996J;
   src: url(../fonts/K1996J.TTF);
 }
+
 @font-face {
   font-family: kabelbkbt;
   src: url(../fonts/kabelbkbt.TTF);
+}
+
+@font-face {
+  font-family: rocko;
+  src: url(../fonts/rocko.TTF);
 }
 
 header{
@@ -113,7 +117,7 @@ header p{
 }
 
 .header-orden{
-  z-index: 1;
+  z-index: 15;
   box-shadow: 4px 0 10px black;
 }
 
@@ -126,7 +130,7 @@ header p{
 }
 
 aside{
-  background-color: rgb(210, 145, 0);
+  background-color: rgba(254, 167, 0, 0.8);
 }
 
 body{
@@ -157,11 +161,11 @@ nav ul li a:hover{
   opacity: 1;
 }
 
-.card-section{
+.card-section p{
   font-family: kabelbkbt;
 }
 
-.card:hover{
+.card-section:hover{
   background-color: black;
   color: white;
   font-weight: bold;
@@ -194,14 +198,56 @@ nav ul li a:hover{
   margin:auto;
 }
 
-.putis{
+.acomodo-vertical{
   display:flex!important;
   justify-content: space-around!important;
 }
 
-@media (min-width: 1024px) {
-   {
+.margen-bottom{
+  margin-bottom: 30px;
+}
 
+.media-object-section h4, .media-object-section p > a{
+  font-family:kabelbkbt;
+  color: orange;
+}
+
+.media-object-section h4:hover, .media-object-section p > a:hover{
+  font-family:kabelbkbt;
+  font-weight: bold;
+  font-style: italic;
+  color: orange;
+}
+
+.media-object-section h4{
+  display: inline;
+}
+
+.media-object-section p{
+  clear: both;
+}
+
+article p{
+  font-family: rocko;
+  font-weight: lighter;
+}
+
+.compartir-redes-sociales p{
+  display: inline;
+  font-size: 12px;
+}
+.compartir-redes-sociales{
+  display: inline;
+  float: right;
+}
+
+.tamaño-h6{
+  font-size: 12px;
+}
+
+@media (min-width: 1024px) {
+  .borde-aside{
+    border-right: solid 4px white;
   }
 }
 
