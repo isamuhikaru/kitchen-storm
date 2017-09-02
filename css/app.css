@@ -28,6 +28,11 @@
   src: url(../fonts/rocko.TTF);
 }
 
+@font-face {
+  font-family: magneto;
+  src: url(../fonts/magneto.TTF);
+}
+
 header{
   position: fixed;
   width: 100%;
@@ -106,6 +111,8 @@ header p{
 
 .menu-flechita-color{
   color: white;
+  font-family: kabelbkbt;
+
 }
 
 .navbar-menu a{
@@ -204,7 +211,7 @@ nav ul li a:hover{
 }
 
 .margen-bottom{
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .media-object-section h4, .media-object-section p > a{
@@ -245,6 +252,15 @@ article p{
   font-size: 12px;
 }
 
+.guitar-storm{
+  font-family: kabelbkbt;
+  color:black;
+}
+
+.guitar-storm-logo{
+  font-family: magneto!important;
+}
+
 @media (min-width: 1024px) {
   .borde-aside{
     border-right: solid 4px white;
@@ -255,11 +271,17 @@ article p{
   .cuerpo {
     padding-top: 50px;
   }
+  aside {
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 639px) {
   .cuerpo {
     padding-top: 50px;
+  }
+  aside {
+    margin-bottom: 40px;
   }
 }
 
