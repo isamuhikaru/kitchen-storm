@@ -250,6 +250,12 @@ article p{
 
 .tamaño-h6{
   font-size: 12px;
+  font-family: rocko;
+}
+
+.tamaño-h6 a{
+  color: orange;
+  text-decoration: underline;
 }
 
 .guitar-storm{
@@ -259,6 +265,27 @@ article p{
 
 .guitar-storm-logo{
   font-family: magneto!important;
+}
+
+.reveal h1{
+  color: orange;
+  font-family: kabelbkbt;
+}
+
+.reveal p{
+  font-family: kabelbkbt;
+  font-size: 17px;
+}
+
+.reveal h2{
+  font-family: kabelbkbt;
+  font-size: 17px;
+  color: orange;
+  font-weight: bold;
+}
+
+.boton-derecha{
+  float: right;
 }
 
 @media (min-width: 1024px) {
