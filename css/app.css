@@ -142,6 +142,7 @@ aside{
 
 body{
   background-color: black;
+  padding-bottom: 20px;
 }
 
 .alineado-justificado-horizontal{
@@ -288,6 +289,84 @@ article p{
   float: right;
 }
 
+figcaption,{
+  font-family: kabelbkbt;
+}
+
+.tabs-content {
+  font-family: kabelbkbt;
+}
+
+footer{
+  background: orange;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 4px 0 10px black;
+}
+
+footer h6{
+  margin: auto;
+  font-family: kabelbkbt;
+}
+
+footer h6 a{
+  color: white;
+}
+
+footer h6 a:hover{
+  color: grey;
+}
+
+.articulo-dentro h4{
+  display: inline;
+}
+
+ .articulo-dentro h6{
+  display: inline;
+  float: right;
+  margin-bottom: 0;
+}
+
+.inline{
+  display: inline;
+}
+
+.articulo-dentro p img{
+  float: left;
+  margin-right: 20px;
+}
+
+.articulo-dentro p{
+  clear: left;
+}
+
+.tabla-centrada{
+  margin:0 auto;
+}
+
+.dice{
+  display: inline;
+  font-size: 11px
+}
+
+.responder-comentarios{
+  font-size: 12px;
+  font-family: kabelbkbt;
+}
+
+.responder-comentarios a{
+  color: orange;
+}
+
+.responder-comentarios a:hover{
+  font-weight: bold;
+}
+
+.respuesta{
+  font-size: 12px;
+}
+
 @media (min-width: 1024px) {
   .borde-aside{
     border-right: solid 4px white;
@@ -315,5 +394,13 @@ article p{
 @media screen and (max-device-width: 1023px) and (orientation: landscape){
   .top-bar-right {
     display: none!important;
+   }
+
+  body{
+    padding-bottom: 0!important;
+  }
+
+   footer{
+     display: none!important;
    }
 }
