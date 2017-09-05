@@ -341,8 +341,14 @@ footer h6 a:hover{
   clear: left;
 }
 
+.articulo-dentro h4{
+  font-family: kabelbkbt;
+  color: orange;
+}
+
 .tabla-centrada{
   margin:0 auto;
+  font-family: rocko;
 }
 
 .dice{
