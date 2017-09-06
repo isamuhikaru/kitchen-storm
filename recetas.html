@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/foundation.min.css" media="screen" charset="utf-8">
   <link rel="stylesheet" href="foundation-icons/foundation-icons.css" media="screen" charset="utf-8">
   <link rel="stylesheet" href="css/app.css" media="screen" charset="utf-8">
-  <title>Kitchen * Storm / Favoritos</title>
+  <title>Kitchen * Storm / Recetas</title>
 </head>
 
 <body>
@@ -37,8 +37,8 @@
             <li>
               <a href="index.html"></i><span class="menu-flechita-color">Menú</span></a>
               <ul class="menu vertical navbar-menu">
-                <li class="text-center active"><a href="favoritos.html">Mis platillos favoritos</a></li>
-                <li class="text-center"><a href="recetas.html">Mis recetas</a></li>
+                <li class="text-center"><a href="favoritos.html">Mis platillos favoritos</a></li>
+                <li class="text-center active"><a href="recetas.html">Mis recetas</a></li>
                 <li class="text-center"><a href="clasicas.html">Recetas clásicas</a></li>
               </ul>
             </li>
@@ -78,8 +78,8 @@
         <nav class="show-for-large">
           <hr>
           <ul class="menu icons icon-top">
-            <li><a href="favoritos.html"><i class="fi-list"></i> <span>Mis platillos favoritos</span></a></li>
-            <li><a href="recetas.html" class="nav-deshabilitada"><i class="fi-list"></i> <span>Mis recetas</span></a></li>
+            <li><a href="favoritos.html" class="nav-deshabilitada"><i class="fi-list"></i> <span>Mis platillos favoritos</span></a></li>
+            <li><a href="recetas.html"><i class="fi-list"></i> <span>Mis recetas</span></a></li>
             <li><a href="clasicas.html" class="nav-deshabilitada"><i class="fi-list"></i> <span>Recetas clásicas</span></a></li>
           </ul>
           <hr>
@@ -120,17 +120,17 @@
         <div class="grid-x">
           <div class="cell acomodo-vertical centrado-vertical-padre">
             <ul class="tabs color-historial centrado-vertical-hijo" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="tablas">
-              <li class="tabs-title is-active"><a href="#panel1" aria-selected="true" class="text-center">Ultimas visitas</a></li>
-              <li class="tabs-title"><a href="#panel2" class="text-center">Ultimas visitas</a></li>
+              <li class="tabs-title"><a href="#panel1" class="text-center">Ultimas visitas</a></li>
+              <li class="tabs-title is-active"><a href="#panel2" aria-selected="true" class="text-center">Ultimas visitas</a></li>
               <li class="tabs-title"><a href="#panel3" class="text-center">Ultimas visitas</a></li>
             </ul>
 
             <div class="tabs-content" data-tabs-content="tablas">
-              <div class="tabs-panel is-active" id="panel1">
+              <div class="tabs-panel" id="panel1">
                 <p class="text-center">• Muslo de pollo frito •</p>
                 <a href="favoritos.html"><img class="thumbnail" src="img/pollo-frito.jpg" alt="Imagen Rota" title="Muslo de pollo frito"></a>
               </div>
-              <div class="tabs-panel" id="panel2">
+              <div class="tabs-panel is-active" id="panel2">
                 <p class="text-center">• Sopa de fideo •</p>
                 <a href="recetas.html"><img class="thumbnail" src="img/fideo.jpg" alt="Imagen Rota" title="Sopa de fideo"></a>
               </div>
@@ -160,8 +160,8 @@
           <div class="grid-x">
 
             <div class="callout warning articulo-dentro">
-              <h4>• Muslo de pollo frito •</h4>
-              <h6 class="tamaño-h6 align-center">*Publicado el 1/09/17 por: <a href="#">César Cuevas</a></h6>
+              <h4>• Sopa de fideo •</h4>
+              <h6 class="tamaño-h6 align-center">*Publicado el 3/09/17 por: <a href="#">César Cuevas</a></h6>
               <hr>
               <div class="table-scroll">
                 <table class="hover tabla-centrada">
@@ -194,7 +194,7 @@
               <br>
               <h5 class="text-center">Modo de preparación:</h5>
               <p class="text-justify">
-                <img class="thumbnail" src="img/pollo-frito.jpg" alt="Imagen Rota" title="Muslo de pollo frito" width="200px;">
+                <iframe width="300" src="https://www.youtube.com/embed/pTamtrKjKPg" frameborder="0" allowfullscreen></iframe>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -250,9 +250,9 @@
             <!-- Reveal para compartir -->
             <!-- Este es el primer modal -->
             <div class="reveal callout warning" id="modal-1" data-reveal>
-              <h1 class="text-center">• Muslo de pollo frito •</h1>
+              <h1 class="text-center">• Sopa de fideo •</h1>
               <hr>
-              <img class="thumbnail" src="img/pollo-frito.jpg" alt="Imagen Rota" title="Muslo de Pollo Frito">
+              <img class="thumbnail" src="img/fideo.jpg" alt="Imagen Rota" title="Sopa de fideo">
               <p class="lead text-center">Disfrutalo en familia</p>
               <button class="button warning boton-derecha" data-open="modal-1-a">Compartir</button>
               <button class="close-button" data-close aria-label="Close reveal" type="button">
