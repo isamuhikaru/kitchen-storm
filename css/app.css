@@ -33,6 +33,16 @@
   src: url(../fonts/magneto.TTF);
 }
 
+body{
+  background-color: black;
+  padding-bottom: 20px;
+  background-attachment: fixed;
+	background-repeat: repeat-x;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../img/fondo.jpg)
+}
+
 header{
   position: fixed;
   width: 100%;
@@ -133,11 +143,6 @@ header p{
 
 aside{
   background-color: rgba(254, 167, 0, 0.8);
-}
-
-body{
-  background-color: black;
-  padding-bottom: 20px;
 }
 
 .alineado-justificado-horizontal{
