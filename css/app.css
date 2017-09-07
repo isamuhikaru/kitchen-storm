@@ -33,255 +33,282 @@
   src: url(../fonts/magneto.TTF);
 }
 
-body{
+body {
   background-color: black;
   padding-bottom: 20px;
   background-attachment: fixed;
-	background-repeat: repeat-x;
-	background-position: 0% 0%;
-	background-size: cover;
-	background-image: url(../img/fondo.jpg)
+  background-repeat: repeat-x;
+  background-position: 0% 0%;
+  background-size: cover;
+  background-image: url(../img/fondo.jpg)
 }
 
-header{
+header {
   position: fixed;
   width: 100%;
 }
 
-.encabezado-color{
+.encabezado-color {
   background: orange;
   height: 70px;
 }
 
-.divs-centrados-horizontales-padre{
-  overflow:hidden;
+.divs-centrados-horizontales-padre {
+  overflow: hidden;
   text-align: center;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
-.divs-centrados-horizontales-hijo{
-  display:inline-table;
+.divs-centrados-horizontales-hijo {
+  display: inline-table;
 }
 
 .centrado-vertical-padre {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-}
-.centrado-vertical-hijo {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 
-header h4, header p{
+.centrado-vertical-hijo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header h4, header p {
   margin: 0;
 }
 
-header a div{
+header a div {
   margin-left: 10px;
 }
 
-header h4{
-
+header h4 {
   font-family: K1996J;
   /* WebKit (Safari/Chrome) Only */
   -webkit-text-stroke: 1px black;
-
   /* If we weren't using text-shadow, we'd set a fallback color
      and use this to set color instead
     -webkit-text-fill-color: white; */
-
   color: orange;
-
-  text-shadow:
-    3px 3px 0 #000,
-    /* Simulated effect for Firefox and Opera
+  text-shadow: 3px 3px 0 #000, /* Simulated effect for Firefox and Opera
        and nice enhancement for WebKit */
-   -1px -1px 0 #000,
-    1px -1px 0 #000,
-   -1px  1px 0 #000,
-    1px  1px 0 #000;
+  -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-header p{
+header p {
   font-family: kabelbkbt;
   color: white;
 }
 
-.encabezado-borde-izquierdo{
+.padding-cero-titulo {
+  padding: 0!important;
+}
+
+.encabezado-borde-izquierdo {
   border-left: solid 4px white;
 }
 
-.top-bar, .top-bar-left > ul, .navbar-menu a:hover, .menu .active > a{
+.top-bar, .top-bar-left>ul, .navbar-menu a:hover, .menu .active>a {
   background: orange;
 }
 
-.menu-flechita-color{
+.menu-flechita-color {
   color: white;
   font-family: kabelbkbt;
 }
 
-.navbar-menu a{
-	background-color: black;
+.navbar-menu a {
+  background-color: black;
   margin: 0 auto;
   width: 100%;
   color: white;
   font-family: kabelbkbt;
 }
 
-.header-orden{
+.header-orden {
   z-index: 15;
-  box-shadow: 4px 0 10px black;
+  -webkit-box-shadow: 4px 0 10px black;
+          box-shadow: 4px 0 10px black;
 }
 
-.cuerpo{
+.cuerpo {
   padding-top: 70px;
 }
 
-.padding-aside{
+.padding-aside {
   padding: 10px;
 }
 
-aside{
+aside {
   background-color: rgba(254, 167, 0, 0.8);
 }
 
-.alineado-justificado-horizontal{
-  display:flex;
-  justify-content: space-around;
+.alineado-justificado-horizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 nav ul {
-  display:flex;
-  justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-nav ul li a span, nav ul li a i{
+nav ul li a span, nav ul li a i {
   color: black;
   font-family: kabelbkbt;
   font-weight: bold;
 }
 
-.nav-deshabilitada{
+.nav-deshabilitada {
   opacity: 0.3;
 }
 
-.nav-deshabilitada:hover{
+.nav-deshabilitada:hover {
   opacity: 1;
 }
 
-.card-section p{
+.card-section p {
   font-family: kabelbkbt;
 }
 
-.card-section:hover{
+.card-section:hover {
   background-color: black;
   color: white;
   font-weight: bold;
 }
 
-.color-historial a{
-  color:black!important;
+.color-historial a {
+  color: black!important;
   font-family: kabelbkbt;
 }
 
-.color-historial a:hover{
+.color-historial a:hover {
   background-color: black;
   color: white!important;
   font-weight: bold;
 }
 
-.alineado-justificado-horizontal a{
+.alineado-justificado-horizontal a {
   opacity: 0.2;
 }
 
-.alineado-justificado-horizontal a:hover{
+.alineado-justificado-horizontal a:hover {
   opacity: 1;
 }
 
-.texto-buscar{
-  font-family:kabelbkbt;
+.texto-buscar {
+  font-family: kabelbkbt;
 }
 
-.card, .thumbnail{
-  margin:auto;
+.card, .thumbnail {
+  margin: auto;
 }
 
-.acomodo-vertical{
-  display:flex!important;
-  justify-content: space-around!important;
+.acomodo-vertical {
+  display: -webkit-box!important;
+  display: -ms-flexbox!important;
+  display: flex!important;
+  -ms-flex-pack: distribute!important;
+      justify-content: space-around!important;
 }
 
-.margen-bottom{
+.margen-bottom {
   margin-bottom: 40px;
 }
 
-.media-object-section h4, .media-object-section p > a{
-  font-family:kabelbkbt;
+.media-object-section h4, .media-object-section p>a {
+  font-family: kabelbkbt;
   color: orange;
 }
 
-.media-object-section h4:hover, .media-object-section p > a:hover{
-  font-family:kabelbkbt;
+.media-object-section h4:hover, .media-object-section p>a:hover {
+  font-family: kabelbkbt;
   font-weight: bold;
   font-style: italic;
   color: orange;
 }
 
-.media-object-section p{
+.media-object-section p {
   clear: both;
 }
 
-article p{
+.warning {
+  background-color: rgba(255, 243, 217, 0.9)!important;
+}
+
+article p {
   font-family: rocko;
   font-weight: lighter;
 }
 
-.compartir-redes-sociales p{
+.boton-cero-margin {
+  margin-bottom: 0;
+}
+
+form {
+  font-family: kabelbkbt;
+}
+
+.compartir-redes-sociales p {
   display: inline;
   font-size: 12px;
 }
 
-.tamaño-h6{
+.tamaño-h6 {
   font-size: 12px;
   font-family: rocko;
 }
 
-.tamaño-h6 a{
+.tamaño-h6 a, .breadcrumbs li a {
   color: orange;
   text-decoration: underline;
 }
 
-.guitar-storm{
+.guitar-storm {
   font-family: kabelbkbt;
-  color:black;
+  color: black;
 }
 
-.guitar-storm-logo{
+.guitar-storm-logo {
   font-family: magneto!important;
 }
 
-.reveal h1{
+.reveal h1 {
   color: orange;
   font-family: kabelbkbt;
 }
 
-.reveal p{
+.reveal p {
   font-family: kabelbkbt;
   font-size: 17px;
 }
 
-.reveal h2{
+.reveal h2 {
   font-family: kabelbkbt;
   font-size: 17px;
   color: orange;
   font-weight: bold;
 }
 
-.boton-derecha{
+.boton-derecha {
   float: right;
 }
 
-figcaption{
+figcaption {
   font-family: kabelbkbt;
 }
 
@@ -289,93 +316,90 @@ figcaption{
   font-family: kabelbkbt;
 }
 
-footer{
+footer {
   background: orange;
   position: fixed;
   bottom: 0;
   width: 100%;
-  box-shadow: 4px 0 10px black;
+  -webkit-box-shadow: 4px 0 10px black;
+          box-shadow: 4px 0 10px black;
 }
 
-footer h6{
+footer h6 {
   margin: auto;
   font-family: kabelbkbt;
 }
 
-footer h6 a{
+footer h6 a {
   color: white;
 }
 
-footer h6 a:hover{
+footer h6 a:hover {
   color: grey;
 }
 
-.articulo-dentro p img{
+.articulo-dentro p img {
   float: left;
   margin-right: 20px;
 }
 
-.articulo-dentro p{
+.articulo-dentro p {
   clear: left;
 }
 
-.articulo-dentro h4, .articulo-dentro h5{
+.articulo-dentro h4, .articulo-dentro h5 {
   font-family: kabelbkbt;
   color: orange;
 }
 
-.tabla-centrada{
-  margin:0 auto;
+.tabla-centrada {
+  margin: 0 auto;
   font-family: rocko;
 }
 
-.dice{
+.dice {
   display: inline;
   font-size: 11px;
 }
 
-.responder-comentarios{
+.responder-comentarios {
   font-size: 12px;
   font-family: kabelbkbt;
 }
 
-.responder-comentarios a{
+.responder-comentarios a {
   color: orange;
 }
 
-.responder-comentarios a:hover{
+.responder-comentarios a:hover {
   font-weight: bold;
 }
 
-.respuesta{
+.respuesta {
   font-size: 12px;
 }
 
-.media-object-section h4{
-  display: inline;
-}
-
-iframe{
+iframe {
   float: left;
   margin-right: 10px;
 }
 
 @media (min-width: 1024px) {
-  .borde-aside{
+  .borde-aside {
     border-right: solid 4px white;
   }
-  .articulo-dentro h4{
+  .articulo-dentro h4 {
     display: inline;
   }
-  .compartir-redes-sociales{
+  .compartir-redes-sociales {
     display: inline;
     float: right;
   }
-  .articulo-dentro h6{
-   display: inline;
-   float: right;
-   margin-bottom: 0;
- }
+  .articulo-dentro h6 {
+    display: inline;
+    float: right;
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 640px) and (max-width: 1023px) {
@@ -383,20 +407,20 @@ iframe{
     padding-top: 50px;
   }
   aside {
-    margin-bottom: 40px;
+    margin-bottom: 16px;
   }
-  .articulo-dentro h4{
+  .articulo-dentro h4 {
     display: inline;
   }
-  .compartir-redes-sociales{
+  .compartir-redes-sociales {
     display: inline;
     float: right;
   }
-  .articulo-dentro h6{
-   display: inline;
-   float: right;
-   margin-bottom: 0;
- }
+  .articulo-dentro h6 {
+    display: inline;
+    float: right;
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 639px) {
@@ -404,31 +428,29 @@ iframe{
     padding-top: 50px;
   }
   aside {
-    margin-bottom: 40px;
+    margin-bottom: 16px;
   }
-  .articulo-dentro h4, .compartir-redes-sociales, .articulo-dentro h6{
+  .articulo-dentro h4, .compartir-redes-sociales, .articulo-dentro h6 {
     text-align: center;
   }
-  .text-justify img{
-    width:100%;
+  .text-justify img {
+    width: 100%;
     margin-bottom: 20px;
   }
-  iframe{
-    width:100%;
+  iframe {
+    width: 100%;
     margin-bottom: 20px;
   }
 }
 
-@media screen and (max-device-width: 1023px) and (orientation: landscape){
+@media screen and (max-device-width: 1023px) and (orientation: landscape) {
   .top-bar-right {
     display: none!important;
-   }
-
-  body{
+  }
+  body {
     padding-bottom: 0!important;
   }
-
-   footer{
-     display: none!important;
-   }
+  footer {
+    display: none!important;
+  }
 }
