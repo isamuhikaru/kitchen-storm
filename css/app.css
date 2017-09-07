@@ -429,6 +429,9 @@ iframe {
   .articulo-dentro h4, .compartir-redes-sociales, .articulo-dentro h6 {
     text-align: center;
   }
+  .display-inline{
+    display: inline;
+  }
   .text-justify img {
     width: 100%;
     margin-bottom: 20px;
