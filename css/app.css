@@ -37,10 +37,10 @@ body {
   background-color: black;
   padding-bottom: 20px;
   background-attachment: fixed;
-  background-repeat: repeat-x;
-  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
-  background-image: url(../img/fondo.jpg)
+  background-image: url(../img/fondo.jpg);
 }
 
 header {
