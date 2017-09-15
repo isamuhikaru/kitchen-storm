@@ -15,22 +15,22 @@
 
 @font-face {
   font-family: K1996J;
-  src: url(../fonts/K1996J.ttf);
+  src: url(../fonts/K1996J.TTF);
 }
 
 @font-face {
   font-family: kabelbkbt;
-  src: url(../fonts/kabelbkbt.ttf);
+  src: url(../fonts/kabelbkbt.TTF);
 }
 
 @font-face {
   font-family: rocko;
-  src: url(../fonts/rocko.ttf);
+  src: url(../fonts/rocko.TTF);
 }
 
 @font-face {
   font-family: magneto;
-  src: url(../fonts/magneto.ttf);
+  src: url(../fonts/magneto.TTF);
 }
 
 body {
